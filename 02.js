@@ -12,6 +12,14 @@ function stringMasLarga(strings) {
   // stringMasLarga(['JavaScript', 'HTML', 'CSS']); debe retornar 'JavaScript'
 
   // Tu código aca
+  const maxC = (strings) => {
+    let letter_max = "";
+    strings.forEach(element => {
+      if (element.length > letter_max.length) letter_max = element; 
+    });
+    return letter_max;
+  }
+  return maxC(strings);
 }
 
 // No modifiques nada debajo de esta linea //
